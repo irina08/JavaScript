@@ -1,0 +1,55 @@
+/*This is a comment purpose: 
+HW 6 CNIT 133 
+student: CNIT 133 Irina Golovko
+date: 11/07/2018 
+hw4.css file to apply css style
+for hw6_a.html, hw6_b.html, 
+hw6_c.html with hw2.css
+*/
+
+#panel1, #panel2 {
+	padding: 5px;
+	background-color: #d3d3d3;
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 14px;
+}		
+
+#panel1 {
+	text-align: center;
+	font-size: 16px;
+}
+
+#panel2 {	
+	text-align: justify;
+	font-size: 14px;
+}
+
+.blue {
+	color: blue;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+textarea {
+	font-family: 'Times New Roman';
+	font-size: 18px;
+	background-color: #dcdcdc;
+	border-style: none; 
+	
+}
+
+table.border {
+	margin: auto;
+	border: 0.5px solid black;
+	width: 50%;
+	background-color: #dcdcdc;
+}
+  
+.error {
+	font: normal 14px arial;
+	padding: 3px;
+	margin: 3px;
+	color: red;
+}

@@ -1,0 +1,77 @@
+header
+{
+	text-align: center;
+}
+
+body 
+{
+	background-color: #e6fff5; 
+	text-align: center;
+}
+
+h3
+{
+	font-family: Comic; 
+	font-weight: bold; 
+	color: #3300ff;
+    font-size: 18pt; 
+	text-align: center
+}
+
+h2
+{
+	text-align: center;
+	color: Green;
+}
+
+a 
+{
+	font-size:12pt; 
+	text-align:left;
+	color: #0000ff; 
+	text-decoration: none;	
+}
+
+#imgB
+{
+	width: 400px;
+	height: 100px;
+}
+
+#imgP
+{
+	width: 125px;
+	height: 100px;
+}
+
+#imgD
+{
+	width: 140px;
+	height: 160px;
+}
+
+#imgHT
+{
+	width: 88px;
+	height: 31px;
+	border: 0;
+}
+
+#imgCS
+{
+	width: 88px;
+	height: 31px;
+	border: 0;
+}
+
+address 
+{
+	font-size: 12pt;
+	text-align: center;
+}
+
+footer
+{
+	font-style: italic; 
+	color: #808080;
+}

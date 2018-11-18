@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- This is a comment purpose: 
+	HW 5 Part 2 CNIT 133 Homeworks
+	student: CNIT 133 Irina Golovko
+	date: 10/30/2018 -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="For and while loops">
+<title>Student Irina Golovko - CNIT 133 Homework 5 Part 2</title>
+<link rel="stylesheet" type="text/css" href="css/hw2.css">
+<link rel="stylesheet" type="text/css" href="css/hw5.css">
+
+<!--//use Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!--JQuery to show/hide instructions -->
+<script>
+	$(document).ready(function () {
+		$("#panel1").click(function () {
+			$("#panel2").slideToggle("slow");
+	});
+});
+</script>
+
+<script src="js/hw5b.js" async></script>	
+
+</head>
+
+<body>
+<div class="main">
+<header>	
+	<nav>
+		<ul>
+			<li class="nav"><a href="hw5_1.html">Main Page HW5</a></li>
+			<li class="nav"><a href="hw5_a.html">Part 1</a></li>
+			<li class="nav" style="color:#0000ff">Part 2</li>	
+			<li class="nav"><a href="hw5_c.html">Part 3</a></li>						
+		</ul>
+	</nav>
+</header>
+
+<section>
+<h3 class="pink">Homework 5 Part 2<br>
+Pulldown menus</h3>
+
+<!--Use JQuery to show/hide instructions -->
+<div id="panel1">Click to Show/Hide Instructions</div>
+<div id="panel2">Create a webpage that contains a script that utilizes 
+2 pulldown menus.<br><br>The first one should utilize an onchange event 
+handler.<br><br>The second should utilize a button with an onclick event 
+handler to navigate to a page after an option is selected.<br><br>
+Each pulldown menu should include at least 3 URL destinations. 							
+</div>
+<br>
+
+<form name="form1">
+	<h3 class="pink">Traveling</h3>
+	<h3 class="blue">Choose your destination (using onChange event handler)</h3>
+	<select name="destinationList" onChange="goToNewPage1(this.form);">
+		<option>Choose Destination:</option>
+		<option value="http://www.expedia.com/">Expedia</option>
+		<option value="http://www.viator.com/">Viator</option>
+		<option value="http://www.booking.com/">Booking</option>
+		<option value="http://www.tripadvisor.com">TripAdvisor</option>
+		<option value="http://www.kayak.com">Kayak</option>
+	</select>
+</form>
+<br>				
+<form name="form2">				
+	<h3 class="blue">Choose your destination (using onClick event handler)</h3>				
+	<select name="destinationList">
+		<option value="https://www.hotwire.com">HotWire</option>
+		<option value="https://www.travelocity.com">Travelocity</option>
+		<option value="https://www.hotels.com">Hotels</option>
+		<option value="https://www.airbnb.com">AirBnB</option>
+		<option value="https://www.orbitz.com">Orbitz</option>
+	</select>
+	<input type="button" value="Go" onClick="goToNewPage2(this.form);">
+</form>
+<br>
+</section>
+	
+<br>
+<footer class="f">
+Email: <a href="mailto:igolovko@mail.ccsf.edu">igolovko@mail.ccsf.edu</a>
+<br>
+Copyright &copy; Irina Golovko, 2018 
+<br><br>
+			
+<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhills.ccsf.edu%2F%7Eigolovko%2Fcnit133%2Fhw5_b.html">
+<img style="border:0;width:88px;height:31px"
+src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" 
+alt="HTML5"></a>
+
+<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhills.ccsf.edu%2F%7Eigolovko%2Fcnit133%2Fhw5_b.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+<img style="border:0;width:88px;height:31px;"
+src="http://jigsaw.w3.org/css-validator/images/vcss" 
+alt="Valid CSS!"></a>
+<br>
+
+</footer>
+</div>
+	
+</body>
+</html>		
+	

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- This is a comment purpose: 
+	HW 3 Part 1 CNIT 133 Homeworks
+	student: CNIT 133 Irina Golovko
+	date: 09/21/2018 -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Determine Students Grades">
+<title>Student Irina Golovko - CNIT 133 Homework 3 Part 1</title>
+<link rel="stylesheet" type="text/css" href="css/hw2.css">
+<link rel="stylesheet" type="text/css" href="css/hw3.css">
+
+<!--//use Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<script>
+	$(document).ready(function () {
+		$("#panel1").click(function () {
+			$("#panel2").slideToggle("slow");
+	});
+});
+</script>
+
+<script src="js/hw3a.js" async></script>
+
+<style>
+table, th, td {
+	border: 0.5px solid black;
+	border-collapse: collapse;
+	background-color: #f2f2f2;
+}	
+</style>
+
+</head>
+
+<body>
+<div class="main">
+<header>	
+	<nav>
+		<ul>
+			<li class="nav"><a href="hw3_1.html">Main Page HW3</a></li>
+			<!-- Part 1 the same color but not a link -->
+			<li class="nav" style="color:#0000ff">Part 1</li>
+			<li class="nav"><a href="hw3_b.html">Part 2</a></li>
+			<li class="nav"><a href="hw3_c.html">Part 3</a></li>			
+			<li class="nav"><a href="hw3_d.html">Part 4</a></li>
+		</ul>
+	</nav>
+</header>
+
+<section>
+<br>
+<h2 class="pink">Homework 3 Part 1<br>
+Determine Students Grades</h2>
+
+<form id="myform" name="myform">
+<!--Use JQuery to show/hide instructions -->
+<div id="panel1">Click to Show/Hide Instructions</div>
+<div id="panel2">The following webpage contains the heading, Student Grades, 
+and uses a script that inputs a student's homework average, mid-term exam 
+score, final exam score, and ACR (all as integers). Calculates the student's 
+final average according to the formula: 
+final average = (.5 * hwAvg) + (.2 * midExam) + (.2 * finalExam) + (.1 * ACR) 
+and determine final grade.<br></div>
+<table class="center">
+	<tr>
+		<td>Homework Average:</td>
+		<td>
+			<input type="number" id="hwAvg" size="10" min="0" max="100" required>
+		</td>
+	</tr>
+	<tr>
+		<td>Mid-term Exam: </td>
+		<td>
+			<input type="number" id="midExam" size="10" min="0" max="100" required>
+		</td>
+	</tr>
+	<tr>
+		<td>Final Exam: </td>
+		<td>
+			<input type="number" id="finalExam" size="10" min="0" max="100" required>
+		</td>
+	</tr>
+	<tr>
+		<td>ACR: </td>
+		<td>
+			<input type="number" id="ACR" size="10" min="0" max="100" required>
+		</td>
+	</tr>
+	<tr>
+		<td>Final Average:</td>
+		<td>
+			<input type="text" id="average" size="10" readonly>
+		</td>
+	</tr>
+	<tr>
+		<td>Final Grade:</td>
+		<td>
+			<input type="text" id="grade" size="10" readonly>
+		</td>
+			</tr>
+</table>
+<br>
+<p id="errOut" class="er"></p>
+															
+<br>
+<input type="button" onclick="process()" value="SUBMIT">
+<input type="reset" value="RESET" onClick="window.location.reload();">
+<br><br>																		
+</form>
+</section>
+	
+<footer class="f">
+Email: <a href="mailto:igolovko@mail.ccsf.edu">igolovko@mail.ccsf.edu</a>
+<br>
+Copyright &copy; Irina Golovko, 2018 
+<br><br>
+			
+<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhills.ccsf.edu%2F%7Eigolovko%2Fcnit133%2Fhw3_a.html">
+<img style="border:0;width:88px;height:31px"
+src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" 
+alt="HTML5"></a>
+
+<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhills.ccsf.edu%2F%7Eigolovko%2Fcnit133%2Fhw3_a.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+<img style="border:0;width:88px;height:31px;"
+src="http://jigsaw.w3.org/css-validator/images/vcss" 
+alt="Valid CSS!"></a>
+<br>
+
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- This is a comment purpose: 
+	HW 3 Part 3 CNIT 133 Homeworks
+	student: CNIT 133 Irina Golovko
+	date: 09/18/2018 -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Temperature Converter.">
+<title>Student Irina Golovko - CNIT 133 Homework 3 Part 3</title>
+<link rel="stylesheet" type="text/css" href="css/hw2.css">
+<link rel="stylesheet" type="text/css" href="css/hw3.css">
+
+<!--//use Jquery -->
+<script 
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script 	src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js">
+</script>
+	
+<script src="js/hw3c.js" async></script>
+
+</head>
+
+<body>
+<div class="main">
+<header>	
+	<nav>
+		<ul>
+			<li class="nav"><a href="hw3_1.html">Main Page HW3</a></li>
+			<li class="nav"><a href="hw3_a.html">Part 1</a></li>
+			<li class="nav"><a href="hw3_b.html">Part 2</a></li>
+			<!-- Part 3 the same color but not a link -->
+			<li class="nav" style="color:#0000ff">Part 3</li>
+			<li class="nav"><a href="hw3_d.html">Part 4</a></li>
+		</ul>
+	</nav>
+</header>
+
+<section>
+<br>
+<h2 class="pink">Homework 3 Part 3<br>
+Temperature converter</h2>
+ 
+<div class="temp">
+<form id="myform" name="myform">
+	<p class="blue">Type a temperature to be converted and then click one of the next buttons</p>
+	<p class="er"><input type="number" id="temperature" name="temperature" size="10" autofocus></p>
+<!-- buttons to calculate or reset temperature values -->				
+	<p>
+		<input type="button" id="f2c" name="f2c" value="Farenheit to Celsius" 			onclick="process()">
+		<input type="button" id="c2f" name="c2f" value="Celsius to Farenheit" 			onclick="process1()">
+	</p>
+	<p><input type="text" id="output"></p>
+	<p><input type="reset" id="result" value="RESET" size="10" 
+		onclick="window.location.reload();"></p>
+		
+</form>
+</div>
+<br><br>
+</section>
+	
+<footer class="f">
+Email: <a href="mailto:igolovko@mail.ccsf.edu">igolovko@mail.ccsf.edu</a>
+<br>
+Copyright &copy; Irina Golovko, 2018 
+<br><br>
+			
+<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhills.ccsf.edu%2F%7Eigolovko%2Fcnit133%2Fhw3_c.html">
+<img style="border:0;width:88px;height:31px"
+src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" 
+alt="HTML5"></a>
+
+<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhills.ccsf.edu%2F%7Eigolovko%2Fcnit133%2Fhw3_c.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+<img style="border:0;width:88px;height:31px;"
+src="http://jigsaw.w3.org/css-validator/images/vcss" 
+alt="Valid CSS!"></a>
+<br>
+
+</footer>
+</div>
+</body>
+</html>

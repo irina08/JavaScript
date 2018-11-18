@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- This is a comment purpose: 
+	HW 4 Extra Credit CNIT 133 Homeworks
+	student: CNIT 133 Irina Golovko
+	date: 10/14/2018 -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Print Square of Asteriks">
+<title>Student Irina Golovko - CNIT 133 Homework 4 Extra Credit</title>
+<link rel="stylesheet" type="text/css" href="css/hw2.css">
+<link rel="stylesheet" type="text/css" href="css/hw4.css">
+
+<!--//use Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+
+<!--JQuery to show/hide instructions -->
+<script>
+	$(document).ready(function () {
+		$("#panel1").click(function () {
+			$("#panel2").slideToggle("slow");
+	});
+});
+</script>
+
+<script src="js/hw4c.js"></script>
+
+</head>
+
+<body>
+<div class="main">
+<header>	
+	<nav>
+		<ul>
+			<li class="nav"><a href="hw4_1.html">Main Page HW4</a></li>
+			<li class="nav"><a href="hw4_a.html">Part 1</a></li>
+			<li class="nav"><a href="hw4_b.html">Part 2</a></li>
+			<!-- Extra Credit the same color but not a link -->
+			<li class="nav" style="color:#0000ff"><a href="hw4_c.html">Extra Credit</a></li>						
+		</ul>
+	</nav>
+</header>
+
+<section>
+<br>
+<h3 class="pink">Homework 4 Extra Credit<br>
+Print Square of Asteriks</h3>
+
+<!--Use JQuery to show/hide instructions -->
+<div id="panel1">Click to Show/Hide Instructions</div>
+<div id="panel2">Create a webpage that contains a script that reads in the size of the 
+side of a square and displays a hollow square of that size constructed of asterisks.<br> 
+Your script should work for squares of all side sizes between 2 and 10 inclusive.<br> 
+Display an error message if the user enters any number that is not between 2 and 10.<br> 
+Be sure that the output looks like a square.<br>
+A common error is having the top and bottom row of asterisks appear to be smaller than the sides.<br>
+[Hint: use nested while or for statements and use a monospaced CSS style for the output.]								  
+</div>
+
+<form id="myform" name="myform">
+<h3>Creating a Box</h3>
+<p class="blue">Please enter the number for the side of square:</p>
+<input type="number" id ="num" name="num" min="2" max="10" required><br><br>
+<p id="error"></p>
+	
+<div id="box" class="starsquare blue"></div>
+<p>
+	<input type="button" value="SUBMIT" onClick="process();">
+	<input type="reset" value="RESET" onClick="window.location.reload();">
+</p>						
+
+</form>
+
+						
+</section>
+<br>	
+<footer class="f">
+Email: <a href="mailto:igolovko@mail.ccsf.edu">igolovko@mail.ccsf.edu</a>
+<br>
+Copyright &copy; Irina Golovko, 2018 
+<br><br>
+			
+<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhills.ccsf.edu%2F%7Eigolovko%2Fcnit133%2Fhw4_c.html">
+<img style="border:0;width:88px;height:31px"
+src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" 
+alt="HTML5"></a>
+
+<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhills.ccsf.edu%2F%7Eigolovko%2Fcnit133%2Fhw4_c.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+<img style="border:0;width:88px;height:31px;"
+src="http://jigsaw.w3.org/css-validator/images/vcss" 
+alt="Valid CSS!"></a>
+<br>
+
+</footer>
+</div>
+</body>
+</html>

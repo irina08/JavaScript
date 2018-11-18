@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- This is a comment purpose: 
+	HW 4 Part 1 CNIT 133 Homeworks
+	student: CNIT 133 Irina Golovko
+	date: 10/14/2018 -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="For and while loops">
+<title>Student Irina Golovko - CNIT 133 Homework 4 Part 1</title>
+<link rel="stylesheet" type="text/css" href="css/hw2.css">
+<link rel="stylesheet" type="text/css" href="css/hw4.css">
+
+<!--//use Jquery -->
+<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" 
+	rel = "stylesheet">
+<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+<!--JQuery to show/hide instructions -->
+<script>
+	$(document).ready(function () {
+		$("#panel1").click(function () {
+			$("#panel2").slideToggle("slow");
+	});
+});
+</script>
+
+
+<!--JQuery to drag an elemen -->
+<script>
+	$(function() {
+		$( ".draggable" ).draggable();
+	});
+</script>
+
+<script src="js/hw4a.js" async></script>
+
+</head>
+
+<body>
+<div class="main">
+<header>	
+	<nav>
+		<ul>
+			<li class="nav"><a href="hw4_1.html">Main Page HW4</a></li>
+			<!-- Part 1 the same color but not a link -->
+			<li class="nav" style="color:#0000ff">Part 1</li>
+			<li class="nav"><a href="hw4_b.html">Part 2</a></li>
+			<li class="nav"><a href="hw4_c.html">Extra Credit</a></li>						
+		</ul>
+	</nav>
+</header>
+
+<section>
+<br>
+<h3 class="pink">Homework 4 Part 1<br>
+Using 'for' and 'while' loops for calculating Integers</h3>
+
+<!--Use JQuery to show/hide instructions -->
+<div id="panel1">Click to Show/Hide Instructions</div>
+<div id="panel2">Part 1a: Create a webpage that contains a script, using the for statement, 
+that calculates the product and sum of every third integer from 5 to 20 inclusive and 
+then displays the results, along with some accompanying text.<br>
+(Note: You should print a line that contains the result of 5 * 8 * 11 * 14 * 17 * 20 
+and a second line that contains the result of 5 + 8 + 11 + 14 + 17 + 20).<br><br>
+Part 1b: Create a script, using the while or do while statement, that calculates the 
+product and sum of every fourth integer from 3 to 31 inclusive an then displays the results.<br>			
+(Note: You should print a line that contains the result of 3 * 7 * 11 * 15 * 19 * 23 * 27 * 31 
+and a second line that contains the result of 3 + 7 + 11 + 15 + 19 + 23 + 27 + 31).<br><br> 
+Use jQuery UI to allow the user to drag an element to a specific area of the page. 
+<br></div>
+
+<h4>Part A</h4>
+<p id="sumA"></p>
+<p id="productA"></p>
+
+<h4>Part B</h4>
+<p id="sumB"></p>
+<p id="productB"></p>
+
+<table class="center">
+	<tr>
+		<th colspan="2">The world of Numbers and Formulas<br>
+						(Drag any image)
+		</th>
+	</tr>
+	<tr>
+		<td><div class="draggable">
+			<img class="draggable" src="images/mathematics.jpg" alt="Mathematics">	
+			</div>	
+		</td>						
+		<td><div class="draggable">
+			<img class="draggable" src="images/artificial.jpg" alt="Artifial Intelligence">
+			</div>
+		</td>
+	</tr>						
+</table>
+
+</section>
+	
+<br>
+<footer class="f">
+Email: <a href="mailto:igolovko@mail.ccsf.edu">igolovko@mail.ccsf.edu</a>
+<br>
+Copyright &copy; Irina Golovko, 2018 
+<br><br>
+			
+<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhills.ccsf.edu%2F%7Eigolovko%2Fcnit133%2Fhw4_a.html">
+<img style="border:0;width:88px;height:31px"
+src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" 
+alt="HTML5"></a>
+
+<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhills.ccsf.edu%2F%7Eigolovko%2Fcnit133%2Fhw4_a.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+<img style="border:0;width:88px;height:31px;"
+src="http://jigsaw.w3.org/css-validator/images/vcss" 
+alt="Valid CSS!"></a>
+<br>
+
+</footer>
+</div>
+</body>
+</html>

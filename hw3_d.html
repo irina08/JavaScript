@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- This is a comment purpose: 
+	HW 3 Part 4 CNIT 133 Homeworks
+	student: CNIT 133 Irina Golovko
+	date: 09/21/2018 -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Math.random and multiplication.">
+<title>Student Irina Golovko - CNIT 133 Homework 3 Part 4</title>
+<link rel="stylesheet" type="text/css" href="css/hw2.css">
+<link rel="stylesheet" type="text/css" href="css/hw3.css">
+
+<!--//use Jquery -->
+<script 
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+
+<script src="js/hw3d.js" async></script>
+
+</head>
+
+<body>
+<div class="main">
+<header>	
+	<nav>
+		<ul>
+			<li class="nav"><a href="hw3_1.html">Main Page HW3</a></li>
+			<li class="nav"><a href="hw3_a.html">Part 1</a></li>
+			<li class="nav"><a href="hw3_b.html">Part 2</a></li>
+			<li class="nav"><a href="hw3_c.html">Part 3</a></li>
+			<!-- Part 4 the same color but not a link -->
+			<li class="nav" style="color:#0000ff">Part 4</li>
+			
+		</ul>
+	</nav>
+</header>
+
+<section>
+<h2 class="pink">Homework 3 Part 4<br>
+Math.random and multiplication</h2>
+ 
+<div class="temp">
+<form id="myform" name="myform">
+<p class="blue">Let's produce two one-digit random integers (0-9)<br> 
+for you which you need to multiply.<p>
+
+<p><input type="button" value="Two random numbers" onclick="generateVal()"></p>
+
+<!-- use red and italic for numbers, correct and inncorect answers -->
+<p id="question" class="blue"></p>
+<p id="result" class="er"></p>
+
+<p class="er">
+	<input type="button" value="Yes: Generate new numbers" onclick="generateVal()">
+	<input type="button" value="No" onclick="goodbye()">
+</p>
+
+<p class="blue">Input your answer here:</p>
+<p>
+	<input type="text" id="check" name="check">
+	<input type="button" value="Check answer" onclick="checkAnswer()">
+</p>
+
+<input type="reset" value="RESET" size="10" onclick="window.location.reload();">
+
+</form>
+</div>
+</section>
+
+<br>	
+<footer class="f">
+Email: <a href="mailto:igolovko@mail.ccsf.edu">igolovko@mail.ccsf.edu</a>
+<br>
+Copyright &copy; Irina Golovko, 2018 
+<br><br>
+			
+<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhills.ccsf.edu%2F%7Eigolovko%2Fcnit133%2Fhw3_d.html">
+<img style="border:0;width:88px;height:31px"
+src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" 
+alt="HTML5"></a>
+
+<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhills.ccsf.edu%2F%7Eigolovko%2Fcnit133%2Fhw3_d.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+<img style="border:0;width:88px;height:31px;"
+src="http://jigsaw.w3.org/css-validator/images/vcss" 
+alt="Valid CSS!"></a>
+<br>
+
+</footer>
+</div>
+</body>
+</html>

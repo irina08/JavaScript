@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- This is a comment purpose: 
+	HW 5 Part 1 CNIT 133 Homeworks
+	student: CNIT 133 Irina Golovko
+	date: 10/28/2018 -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="For and while loops">
+<title>Student Irina Golovko - CNIT 133 Homework 5 Part 1</title>
+<link rel="stylesheet" type="text/css" href="css/hw2.css">
+<link rel="stylesheet" type="text/css" href="css/hw5.css">
+
+<!--//use Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+
+<!--JQuery to show/hide instructions -->
+<script>
+	$(document).ready(function () {
+		$("#panel1").click(function () {
+			$("#panel2").slideToggle("slow");
+	});
+});
+</script>
+
+<script src="js/hw5a.js"></script>	
+
+</head>
+
+<body>
+<div class="main">
+<header>	
+	<nav>
+		<ul>
+			<li class="nav"><a href="hw5_1.html">Main Page HW5</a></li>
+			<!-- Part 1 the same color but not a link -->
+			<li class="nav" style="color:#0000ff">Part 1</li>
+			<li class="nav"><a href="hw5_b.html">Part 2</a></li>
+			<li class="nav"><a href="hw5_c.html">Part 3</a></li>						
+		</ul>
+	</nav>
+</header>
+
+<section>
+<h3 class="pink">Homework 5 Part 1<br>
+Validating form fields data</h3>
+
+<!--Use JQuery to show/hide instructions -->
+<div id="panel1">Click to Show/Hide Instructions</div>
+<div id="panel2">Create a webpage containing a form that displays an input text box, 
+radio buttons, checkboxes, and select items; along with a script that executes form 
+validation.<br><br>Your script should validate whether the user has entered data in the 
+input text box, has checked a radio button, has checked at least one checkbox, and has 
+selected an option from the select items.<br><br>Use a submit button to invoke the 
+validation script, so that the form is processed only when the form fields are valid. 
+If a field is invalid then display a message to the user. In your form statement, 
+use method="post" and an action that can be a mailto or a webpage(displaying that the 
+form has been processed), but be sure to use input type='submit' for your submit button.<br><br>
+Alternatively you can leave out the forms action and method, but then you should use an 
+input type="button", along with displaying any appropriate messages. 				
+</div>
+
+<br>
+<div class="content">
+
+<h3 class="blue center">Feedback Form</h3>
+<p class="blue center">Thank you for your interest to buy or lease a car with our company.<br>
+Please fill out the following form, and then click the submit button.</p>
+
+<form id="myform" action="mailto:igolovko@mail.ccsf.edu" method="post" enctype="text/plain" name="myform">
+<table>
+	<tr>
+		<td class="bold">Name:</td>
+		<td><input type="text" size="15" maxlength="50" name="name" id="name" class="required" autofocus></td>
+	</tr>
+	<tr>
+		<td class="bold">Email Address:</td>
+		<td><input type="email" size="15" maxlength="50" id="email" class="required" name="email"></td>
+	</tr>
+	<tr>
+		<td><label for="age" class="label bold">Your Age:</label></td>
+		<td>
+			<select name="age" id="age" class="required">
+			<option value="">-Choose one-</option>
+			<option value="16-19">16-19</option>
+			<option value="20-24">20-24</option>
+			<option value="25-29">25-29</option>
+			<option value="30-34">30-34</option>
+			<option value="35-39">35-39</option>
+			<option value="40-44">40-44</option>
+			<option value="45-49">45-49</option>
+			<option value="50-54">50-54</option>
+			<option value="55-59">55-59</option>
+			<option value="60-64">60-64</option>
+			<option value="65-69">65-69</option>
+			<option value="70-74">70-74</option>
+			<option value="75-79">75 and up</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td><label for="gender" class="label bold">Your Gender:</label></td>
+		<td>
+			<select name="gender" id="gender" class="required">
+			<option value="">-Choose one-</option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="other">Other</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td><label for="car" class="label bold">What was your interest:</label></td>
+		<td><select name="car" id="car" class="required">
+			<option value="">-Choose one-</option>
+			<option value="buying_a_car">buying a car</option>
+			<option value="lease_a_car">lease a car</option>
+			</select>
+		</td>																																										  
+	</tr>
+	<tr>
+		<td class="bold" colspan="2">Were you satisfied with the customer service we provided for you?
+			<br><span class="s">(Choose only one)</span>
+		</td>
+	</tr>
+	<tr>	
+		<td class="tab" colspan="2">Yes<input type="radio" id="opinion1" name="opinion" class="required" value="Yes">
+		No<input type="radio" id="opinion2" name="opinion" value="No">
+		Somewhat<input type="radio" id="opinion3" name="opinion" value="Somewhat">
+		</td>
+ 	</tr>
+</table>	
+
+<table>
+	<tr>
+		<td class="bold">What kind of car(cars) did you buy or lease with us:
+			<br><span class="s">(Choose all that apply)</span></td>	
+	</tr>
+	<tr>
+		<td class="tab">Volkswagen Beetle
+				<input type="checkbox" name="interest" id="interest1" class="required" value="volkswagen_beetle">																							
+				Volkswagen Passat<input type="checkbox" name="interest" id="interest2" value="volkswagen_passat">
+				Volkswagen Golf<input type="checkbox" name="interest" id="interest3" value="volkswagen_golf">
+				Volkswagen Jetta<input type="checkbox" name="interest" id="interest4" value="volkswagen_jetta">
+				Audi A4<input type="checkbox" name="interest" id="interest5"  value="audi_a4">				
+				BMW5<input type="checkbox" name="interest" id="interest6" value="bmw_5">
+				BMW3<input type="checkbox" name="interest" id="interest7" value="bmw_3">
+				Mini Cooper<input type="checkbox" name="interest" id="interest8" value="mini_cooper">
+				Porscher<input type="checkbox"  name="interest" id="interest9" value="porsche">
+				Volvo S80<input type="checkbox"  name="interest" id="interest10" value="volovo_s80">
+				Maserati<input type="checkbox"  name="interest" id="interest11" value="maserati">									
+		</td>
+	</tr>																																														
+</table>
+																										   
+<table class="center">
+   <tr>
+		<td><input type="submit" id="submit_button" value="SUBMIT"></td>
+		<td><input type="reset" value="RESET" onclick="window.location.reload();"></td>
+  </tr>
+</table>
+
+</form>									
+</div>
+
+</section>
+	
+<br>
+<footer class="f">
+Email: <a href="mailto:igolovko@mail.ccsf.edu">igolovko@mail.ccsf.edu</a>
+<br>
+Copyright &copy; Irina Golovko, 2018 
+<br><br>
+			
+<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhills.ccsf.edu%2F%7Eigolovko%2Fcnit133%2Fhw5_a.html">
+<img style="border:0;width:88px;height:31px"
+src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" 
+alt="HTML5"></a>
+
+<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhills.ccsf.edu%2F%7Eigolovko%2Fcnit133%2Fhw5_a.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+<img style="border:0;width:88px;height:31px;"
+src="http://jigsaw.w3.org/css-validator/images/vcss" 
+alt="Valid CSS!"></a>
+<br>
+
+</footer>
+</div>
+	
+
+	
+</body>
+</html>		
+	

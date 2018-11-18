@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- This is a comment purpose: 
+	HW 6 Part 1 CNIT 133 Homeworks
+	student: CNIT 133 Irina Golovko
+	date: 11/07/2018 -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Objects">
+<title>Student Irina Golovko - CNIT 133 Homework 6 Part 1</title>
+<link rel="stylesheet" type="text/css" href="css/hw2.css">
+<link rel="stylesheet" type="text/css" href="css/hw6.css">
+
+<!--//use Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+
+<script src="js/hw6a.js" async></script>	
+
+</head>
+
+<body>
+<div class="main">
+<header>	
+	<nav>
+		<ul>
+			<li class="nav"><a href="hw6_1.html">Main Page HW6</a></li>
+			<li class="nav" style="color:#0000ff">Part 1</li>
+			<li class="nav"><a href="hw6_b.html">Part 2</a></li>
+			<li class="nav"><a href="hw6_c.html">Part 3</a></li>						
+		</ul>
+	</nav>
+</header>
+
+<section>
+<h3 class="pink">Homework 6 Part 1<br>
+Math Objects and methods.</h3>
+
+<!--Use JQuery to show/hide instructions -->
+<div id="panel1">Click to Show/Hide Instructions</div>
+<div id="panel2">Create a webpage that contains a script that has a function 
+that uses Math.round, Math.sqrt and Math.floor, toFixed() to obtain the following:
+a) round the floating-point number to the nearest integer;
+b) calculate the square root of the floating-point number and round it to an integer;
+c) round the floating-point number to the nearest tenths position;
+d) round the floating-point number to the nearest hunderdths position;
+e) round the floating-point number to the nearest thousandths position.
+<br><br>
+Page should require the user to enter a floating-point number with AT LEAST 4 
+decimal positions (no less than that). Script should display the original 
+floating-point number, the number rounded to the nearest integer, 
+the square root of the number that is then rounded to an integer, the number 
+rounded to the nearest tenth, the number rounded to the nearest hundredth, 
+and the number rounded to the nearest thousandth.
+<br><br>
+Use parseFloat() for the inputted number. Use a form input box that the user will 
+use to input and a textarea to display the output. When displaying the output, 
+depending on which method you chose, be sure to use toFixed() for displaying the 
+number to the nearest tenths, hundredths, and thousandths positions 
+(just in case you decided to use Math.floor and Math.round for some of the requests for this part). 
+Validate the input and display an error message if the input is invalid. 
+It is acceptable to use jQuery for this problem.				 				
+</div>
+
+<form id="myform" name="myform">
+	<h4 class="blue">Enter a positive floating-point number<br>with at least 4 decimal positions:</h4>
+	<div class="error" id="errorMes"></div>
+
+	<p>
+		<input type="text" id="numberInput" name="numberInput" size="10" autofocus>
+	</p>
+	<br>
+	<p>
+		<textarea id="result" cols="60" rows="14" readonly></textarea>
+	</p>
+
+	<p>
+		<input type="button" value="CALCULATE" onclick="mathCalculate()">
+		<input type="reset" value="RESET" onclick="window.location.reload();" size="10">
+	</p>
+</form>
+</section>
+	
+<br>
+<footer class="f">
+Email: <a href="mailto:igolovko@mail.ccsf.edu">igolovko@mail.ccsf.edu</a>
+<br>
+Copyright &copy; Irina Golovko, 2018 
+<br><br>
+			
+<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhills.ccsf.edu%2F%7Eigolovko%2Fcnit133%2Fhw6_a.html">
+<img style="border:0;width:88px;height:31px"
+src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" 
+alt="HTML5"></a>
+
+<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhills.ccsf.edu%2F%7Eigolovko%2Fcnit133%2Fhw6_a.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+<img style="border:0;width:88px;height:31px;"
+src="http://jigsaw.w3.org/css-validator/images/vcss" 
+alt="Valid CSS!"></a>
+<br>
+
+</footer>
+</div>	
+</body>
+</html>		
+	

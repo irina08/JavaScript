@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- This is a comment purpose: 
+	HW 2 Extra Credit CNIT 133 Homeworks
+	student: CNIT 133 Irina Golovko
+	date: 09/05/2018 -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Exchange Rates.">
+<title>Student Irina Golovko - CNIT 133 Homework 2 Extra Credit</title>
+<link rel="stylesheet" type="text/css" href="css/hw2.css">	
+
+<!-- Link to JQuery Library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+
+<style>
+table, th, td {
+	border: 0.5px solid black;
+	border-collapse: collapse;
+	background-color: #f2f2f2;
+}	
+
+.bold {
+	font-weight: bold;
+}
+
+#panel1, #panel2 {
+	padding: 5px;
+	text-align: center;
+	background-color: #dcdcdc;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}		
+</style>
+
+<script>
+	$(document).ready(function () {
+		$("#panel1").click(function () {
+			$("#panel2").slideToggle("slow");
+	});
+});
+</script>
+
+<script>
+	$(document).ready(function () {
+		$('#usd').focus(function () {
+			$(this).css('background-color', '#BDFCC9');
+		});
+	});
+</script>
+
+<script src="js/hw2e.js" async></script>
+
+</head>
+
+<body>
+<div class="main">
+<header>	
+	<nav>
+		<ul>
+			<li class="nav left"><a href="hw2_1.html">Main Page HW2</a></li>
+			<li class="nav left"><a href="hw2_a.html">Part 1</a></li>
+			<li class="nav left"><a href="hw2_b.html">Part 2</a></li>
+			<li class="nav left"><a href="hw2_c.html">Part 3</a></li>
+			<li class="nav left"><a href="hw2_d.html">Part 4</a></li>
+			<!-- Part 2 the same color but not a link -->
+			<li class="nav left" style="color:#0000ff">Extra Credit</li>
+		</ul>
+	</nav>
+</header>
+<br>
+
+<section>
+<br>
+<h2 class="pink">Homework 2 Extra Credit<br>
+Exchange Rates</h2>
+<p class="par">Create a webpage containing a script that will input an amount in U.S. dollars and display in a table its equivalent in each of the above foreign currencies: British Pound, Canadian Dollar, Euro, Japanese Yen, Mexican Peso, rounded to 2 decimal places.</p> 
+
+<form id="myform" name="myform">
+<!--Use JQuery to show/hide instructions-->
+<div id="panel1">Click to Show/Hide Instructions</div>
+<div id="panel2">The foreign exchange rates on September 8, 2018.<br>
+Enter a dollar amount in the table below to see the corresponding foreign exchange values.<br>
+</div>
+
+<!--Add table-->
+<table class="center">
+	<tr><th colspan="3">Monetary Exchange Rates</th></tr>
+	<tr>
+		<th>Currency</th>
+		<th>Rate</th>
+		<th>Value</th>
+	</tr>
+	<tr>
+		<td>British Pound</td>
+		<td>0.773902</td>
+		<td><input type="text" id="bp" size="15" readonly></td>
+	</tr>
+	<tr>
+		<td>Canadian Dollar</td>
+		<td>1.315801</td>
+		<td><input type="text" id="cd" size="15" readonly></td>
+	</tr>
+	<tr>
+		<td>Euro</td>
+		<td>0.864513</td>
+		<td><input type="text" id="eu" size="15" readonly></td>
+	</tr>
+	<tr>
+		<td>Japanese Yen</td>
+		<td>110.989273</td>
+		<td><input type="text" id="jy" size="15" readonly></td>
+	</tr>
+	<tr>
+		<td>Mexican Peso</td>
+		<td>19.332035</td>
+		<td><input type="text" id="mp" size="15" readonly>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" class="bold">Enter Amount of US Dollars</td>
+		<td><input type="text" class="right" id="usd" size="15" autofocus></td>
+	</tr>
+</table>
+
+<!-- Add buttons to calculate and reset values -->
+<p>
+	<input type="button" id="process" value="CALCULATE">
+	<input type="reset" id="res" value="RESET" size="10">
+</p>
+</form>
+</section>
+	
+<footer class="f">
+Email: <a href="mailto:igolovko@mail.ccsf.edu">igolovko@mail.ccsf.edu</a>
+<br>
+Copyright &copy; Irina Golovko, 2018 
+<br><br>
+			
+<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhills.ccsf.edu%2F%7Eigolovko%2Fcnit133%2Fhw2_e.html">
+<img style="border:0;width:88px;height:31px"
+src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" 
+alt="HTML5"></a>
+
+<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhills.ccsf.edu%2F%7Eigolovko%2Fcnit133%2Fhw2_e.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+<img style="border:0;width:88px;height:31px;"
+src="http://jigsaw.w3.org/css-validator/images/vcss" 
+alt="Valid CSS!"></a>
+<br>
+
+</footer>
+</div>
+</body>
+</html>

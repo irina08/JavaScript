@@ -1,0 +1,77 @@
+/*This is a comment purpose: 
+HW 4 CNIT 133 
+student: CNIT 133 Irina Golovko
+date: 10/14/2018 
+hw4.css file to apply css style
+for hw4_a.html, hw4_b.html, 
+hw4_c.html with hw2.css
+*/
+
+#panel1, #panel2 {
+	padding: 5px;
+	background-color: #dcdcdc;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 14px;
+}		
+
+#panel1 {
+	text-align: center;
+	font-size: 16px;
+}
+
+#panel2 {	
+	text-align: justify;
+	font-size: 14px;
+}
+
+.draggable { 
+	width: 150px; 
+	height: 130px; 
+	background-color: #dcdcdc;
+}
+
+table {
+	width: 80%;
+}
+
+th.compound {
+	background-color: maroon;
+	color: white;
+}
+
+table.compound {
+	border: 1px dotted gray;
+	border-collapse: collapse;
+	width: 50%;
+}
+
+th.compound, td.compound {
+	border:1px dotted gray;
+}
+
+tr.compound:nth-child(odd) {
+	background-color: #ffff00;
+}
+
+tr.compound:nth-child(even) {
+	background-color: #33ff77;
+}
+
+.starsquare {
+	font-family: monospace;
+	margin: 0px auto;
+	font-size: 16px;
+}
+
+#error { 
+	font-size:16px; 
+	margin: 0px auto; 
+	color: red; 
+	display: block;
+}
+
+.blue {
+	color: blue;
+}
